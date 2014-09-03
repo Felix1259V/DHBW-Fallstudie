@@ -32,6 +32,16 @@ public class JavaFXApplication1 extends Application {
             }
         });
         
+        Button btn2 = new Button();
+        btn2.setText("Say 'Hello World'");
+        btn2.setOnAction(new EventHandler<ActionEvent>() {
+            
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("Hello World!");
+            }
+        });
+        
         StackPane root = new StackPane();
         root.getChildren().add(btn);
         
